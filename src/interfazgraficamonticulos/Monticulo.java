@@ -16,6 +16,18 @@ public class Monticulo {
         return size;
     }
     
+    public int getClaveUsuario(int a)
+    {
+        return this.usuario[a].getClave();
+    }
+    public String getNombreUsuario(int a)
+    {
+        return this.usuario[a].getNombre();
+    }
+    public String getTelefonoUsuario(int a)
+    {
+        return this.usuario[a].getElefono();
+    }
     public void ingresar(Usuario usuario)
     {
         System.out.println(String.valueOf(size));
