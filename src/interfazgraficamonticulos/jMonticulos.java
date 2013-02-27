@@ -418,17 +418,31 @@ public class jMonticulos extends javax.swing.JFrame {
    
     private void BtIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtIngresarActionPerformed
         // TODO add your handling code here:
-        int clave = Integer.getInteger(this.jClave.getText());
-        String nombre = this.jNombre.getText();
-        String telefono = this.JTelefono1.getText();
-        Usuario us = new Usuario(clave,nombre,telefono);
-        if (this.mont.getSize()<31) {
-            this.mont.ingresar(us);
+        
+        if (this.jClave.getText()!="" && this.JTelefono1.getText()!="" && this.jNombre.getText()!="") {
+            
+            int clave = Integer.getInteger(this.jClave.getText());
+            String nombre = this.jNombre.getText();
+            String telefono = this.JTelefono1.getText();
+            Usuario us = new Usuario(clave,nombre,telefono);
+            
+            if (this.mont.getSize()<31) {
+                
+                this.mont.ingresar(us);
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(null, "Numero de nodos completo", "Nodos Completos", JOptionPane.INFORMATION_MESSAGE);
+            }
+            
         }
-        else
-        {
-            JOptionPane.showMessageDialog(null, "Numero de nodos completo", "Nodos Completos", JOptionPane.INFORMATION_MESSAGE);
+        
+        else{
+            
+             JOptionPane.showMessageDialog(null, "Erro", "Un campo no tiene datos", JOptionPane.INFORMATION_MESSAGE);
+
         }
+        
     }//GEN-LAST:event_BtIngresarActionPerformed
 
     private void BtEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtEliminarActionPerformed
