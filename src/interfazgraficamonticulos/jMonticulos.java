@@ -13,7 +13,8 @@ import java.util.LinkedList;
  * @author chaqui
  */
 public class jMonticulos extends javax.swing.JFrame {
-    Monticulo mont = new  Monticulo();
+   private Monticulo mont = new  Monticulo();
+   private int p1;
 
     /**
      * Creates new form jMonticulos
@@ -78,6 +79,11 @@ public class jMonticulos extends javax.swing.JFrame {
         jNodo30 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jLabel1.setText("Nombre:");
 
@@ -219,7 +225,6 @@ public class jMonticulos extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jNodo16)
                                 .addGap(45, 45, 45)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jNodo17)
                         .addGap(57, 57, 57)
                         .addComponent(jNodo18)
@@ -274,7 +279,6 @@ public class jMonticulos extends javax.swing.JFrame {
                                 .addComponent(jNodo)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jNodo4)
                         .addGap(259, 259, 259)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -405,20 +409,21 @@ public class jMonticulos extends javax.swing.JFrame {
        listaLabels[21]= this.jNodo21;
        listaLabels[22]= this.jNodo22;
        listaLabels[23]= this.jNodo23;
-       listaLabels[23]= this.jNodo24;
+       listaLabels[24]= this.jNodo24;
        listaLabels[25]= this.jNodo25;
        listaLabels[26]= this.jNodo26;
        listaLabels[27]= this.jNodo27;
        listaLabels[28]= this.jNodo28;
        listaLabels[29]= this.jNodo29;
        listaLabels[30]= this.jNodo30;
-       listaLabels[30].setText("12");
+       for (int i = 0; i < 31; i++) {
+           listaLabels[i].setVisible(false);
+       }
        
    }
    
     private void BtIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtIngresarActionPerformed
         // TODO add your handling code here:
-        
         if (this.jClave.getText()!="" && this.JTelefono1.getText()!="" && this.jNombre.getText()!="") {
             
             int clave = Integer.getInteger(this.jClave.getText());
@@ -427,9 +432,11 @@ public class jMonticulos extends javax.swing.JFrame {
             Usuario us = new Usuario(clave,nombre,telefono);
             
             if (this.mont.getSize()<31) {
-                
+                this.p1=this.mont.getSize();
                 this.mont.ingresar(us);
-            }
+                this.listaLabels[this.p1].setText(String.valueOf(this.mont.getClaveUsuario(this.p1)));
+                this.listaLabels[this.p1].setVisible(true);
+            }   
             else
             {
                 JOptionPane.showMessageDialog(null, "Numero de nodos completo", "Nodos Completos", JOptionPane.INFORMATION_MESSAGE);
@@ -439,7 +446,7 @@ public class jMonticulos extends javax.swing.JFrame {
         
         else{
             
-             JOptionPane.showMessageDialog(null, "Erro", "Un campo no tiene datos", JOptionPane.INFORMATION_MESSAGE);
+             JOptionPane.showMessageDialog(null, "Error", "Un campo no tiene datos", JOptionPane.INFORMATION_MESSAGE);
 
         }
         
@@ -447,7 +454,28 @@ public class jMonticulos extends javax.swing.JFrame {
 
     private void BtEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtEliminarActionPerformed
         // TODO add your handling code here:
+         try
+        {
+            this.p1=this.mont.getSize();
+            Usuario us;
+            us = this.mont.eliminar();
+            this.jClaveS.setText(String.valueOf(us.getClave()));
+            this.jNombreS.setText(us.getNombre());
+            this.JTelefonoS.setText(us.getElefono());
+            this.listaLabels[this.p1].setText("");
+            this.listaLabels[this.p1].setVisible(false);
+        }
+        catch(NullPointerException e)
+        {
+              JOptionPane.showMessageDialog(null, "Error", "Ya no hay mas elementos que mostrar", JOptionPane.INFORMATION_MESSAGE);
+
+        }
     }//GEN-LAST:event_BtEliminarActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        this.ingresarLabels();
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
