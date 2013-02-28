@@ -442,8 +442,8 @@ public class jMonticulos extends javax.swing.JFrame {
     private void BtIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtIngresarActionPerformed
         // TODO add your handling code here:
         if (this.jClave.getText()!="" && this.JTelefono1.getText()!="" && this.jNombre.getText()!="") {
-            
-            int clave = Integer.getInteger(this.jClave.getText());
+            System.out.println(this.jClave.getText());
+            int clave = Integer.parseInt(this.jClave.getText());
             String nombre = this.jNombre.getText();
             String telefono = this.JTelefono1.getText();
             Usuario us = new Usuario(clave,nombre,telefono);
@@ -452,7 +452,7 @@ public class jMonticulos extends javax.swing.JFrame {
                 this.p1=this.mont.getSize();
                 this.mont.ingresar(us);
                 
-                for (int i = 0; i <= this.p1+1; i++) {
+                for (int i = 0; i <= this.p1; i++) {
                     this.listaLabels[i].setText(String.valueOf(this.mont.getClaveUsuario(i)));
                 }
                 
@@ -475,26 +475,21 @@ public class jMonticulos extends javax.swing.JFrame {
 
     private void BtEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtEliminarActionPerformed
         // TODO add your handling code here:
-         try
-        {
+
             int p3=this.mont.getSize();
             Usuario us;
             us = this.mont.eliminar();
             this.jClaveS.setText(String.valueOf(us.getClave()));
             this.jNombreS.setText(us.getNombre());
             this.JTelefonoS.setText(us.getElefono());
-            this.listaLabels[p3].setText("");
+            this.listaLabels[p3].setText(" ");
             this.listaLabels[p3].setVisible(false);
-            for (int i = 0; i < p3; i++) {
+            System.out.println("error "+String.valueOf(p3)+" "+String.valueOf(this.mont.getSize()));
+            for (int i = 0; i < this.mont.getSize(); i++) {
                     this.listaLabels[i].setText(String.valueOf(this.mont.getClaveUsuario(i)));
                 }
-        }
-        catch(NullPointerException e)
-        {
-            
-              JOptionPane.showMessageDialog(null, "Error", "Ya no hay mas elementos que mostrar", JOptionPane.INFORMATION_MESSAGE);
+            this.listaLabels[p3].setText(" ");
 
-        }
     }//GEN-LAST:event_BtEliminarActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
