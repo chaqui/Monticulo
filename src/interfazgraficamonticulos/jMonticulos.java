@@ -15,6 +15,7 @@ import java.util.LinkedList;
 public class jMonticulos extends javax.swing.JFrame {
    private Monticulo mont = new  Monticulo();
    private int p1;
+   private UltimaLinea ultima = new UltimaLinea();
 
     /**
      * Creates new form jMonticulos
