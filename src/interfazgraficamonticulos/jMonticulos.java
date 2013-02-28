@@ -468,6 +468,9 @@ public class jMonticulos extends javax.swing.JFrame {
             this.JTelefonoS.setText(us.getElefono());
             this.listaLabels[p3].setText("");
             this.listaLabels[p3].setVisible(false);
+            for (int i = 0; i <= p3; i++) {
+                    this.listaLabels[i].setText(String.valueOf(this.mont.getClaveUsuario(i)));
+                }
         }
         catch(NullPointerException e)
         {
