@@ -65,8 +65,8 @@ public class Monticulo {
         usuario[size]= null;
         int cIzq=hijoIzq(p);
         int cDer=hijoDer(p);
-        if (cIzq<31 || usuario[cIzq]!= null) {
-            if (cDer<31 || usuario[cDer]!= null) {
+        if (cIzq<this.size || usuario[cIzq]!= null) {
+            if (cDer<this.size || usuario[cDer]!= null) {
                 if (usuario[cIzq]!= null){
                     System.out.println(String.valueOf(usuario[p].getClave()));
                  if (usuario[p].getClave()>usuario[cIzq].getClave()) {
@@ -115,8 +115,8 @@ public class Monticulo {
     padre=hijo;
     int cIzq=hijoIzq(padre);
         int cDer=hijoDer(padre);
-        if (cIzq<31 || usuario[cIzq]!= null) {
-            if (cDer<31 || usuario[cDer]!= null) {
+        if (cIzq<this.size || usuario[cIzq]!= null) {
+            if (cDer<this.size || usuario[cDer]!= null) {
                 if (usuario[padre].getClave()>usuario[cIzq].getClave()) {
                     if (usuario[padre].getClave()>usuario[cDer].getClave()) {
                         if (usuario[cIzq].getClave()>usuario[cDer].getClave()) {

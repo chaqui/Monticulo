@@ -489,6 +489,10 @@ public class jMonticulos extends javax.swing.JFrame {
                     this.listaLabels[i].setText(String.valueOf(this.mont.getClaveUsuario(i)));
                 }
             this.listaLabels[p3].setText(" ");
+            this.listaLabels[this.mont.getSize()].setText(" ");
+            this.listaLabels[this.mont.getSize()].setVisible(false);
+            System.out.println("p3: "+this.listaLabels[p3]);
+           
 
     }//GEN-LAST:event_BtEliminarActionPerformed
 
