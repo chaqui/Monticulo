@@ -434,7 +434,11 @@ public class jMonticulos extends javax.swing.JFrame {
             if (this.mont.getSize()<31) {
                 this.p1=this.mont.getSize();
                 this.mont.ingresar(us);
-                this.listaLabels[this.p1].setText(String.valueOf(this.mont.getClaveUsuario(this.p1)));
+                
+                for (int i = 0; i <= this.p1; i++) {
+                    this.listaLabels[i].setText(String.valueOf(this.mont.getClaveUsuario(i)));
+                }
+                
                 this.listaLabels[this.p1].setVisible(true);
             }   
             else
@@ -456,14 +460,14 @@ public class jMonticulos extends javax.swing.JFrame {
         // TODO add your handling code here:
          try
         {
-            this.p1=this.mont.getSize();
+            int p3=this.mont.getSize();
             Usuario us;
             us = this.mont.eliminar();
             this.jClaveS.setText(String.valueOf(us.getClave()));
             this.jNombreS.setText(us.getNombre());
             this.JTelefonoS.setText(us.getElefono());
-            this.listaLabels[this.p1].setText("");
-            this.listaLabels[this.p1].setVisible(false);
+            this.listaLabels[p3].setText("");
+            this.listaLabels[p3].setVisible(false);
         }
         catch(NullPointerException e)
         {
