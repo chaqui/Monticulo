@@ -109,10 +109,28 @@
                                               <EmptySpace min="-2" pref="198" max="-2" attributes="0"/>
                                               <Component id="jNodo26" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                                              <Component id="jNodo27" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
-                                              <Component id="jNodo28" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace pref="71" max="32767" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" attributes="0">
+                                                      <Component id="jNodo27" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                                                      <Component id="jNodo28" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace pref="71" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Component id="jLabelNomN" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="jLabelTel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="jLabelClaveN" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Component id="jTelefonoR" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="jNombreR" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="jClaveR" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                  </Group>
+                                              </Group>
                                           </Group>
                                       </Group>
                                       <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
@@ -295,7 +313,22 @@
                   <Component id="jNodo25" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jNodo15" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="138" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabelNomN" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jNombreR" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabelTel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTelefonoR" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabelClaveN" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jClaveR" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="81" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -372,6 +405,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="00"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodoMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo1">
       <Properties>
@@ -522,6 +558,18 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="30"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelNomN">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelTel1">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelClaveN">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jNombreR">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jTelefonoR">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jClaveR">
     </Component>
   </SubComponents>
 </Form>

@@ -78,6 +78,12 @@ public class jMonticulos extends javax.swing.JFrame {
         jNodo28 = new javax.swing.JLabel();
         jNodo29 = new javax.swing.JLabel();
         jNodo30 = new javax.swing.JLabel();
+        jLabelNomN = new javax.swing.JLabel();
+        jLabelTel1 = new javax.swing.JLabel();
+        jLabelClaveN = new javax.swing.JLabel();
+        jNombreR = new javax.swing.JLabel();
+        jTelefonoR = new javax.swing.JLabel();
+        jClaveR = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -119,6 +125,11 @@ public class jMonticulos extends javax.swing.JFrame {
         });
 
         jNodo.setText("00");
+        jNodo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodoMouseClicked(evt);
+            }
+        });
 
         jNodo1.setText("01");
 
@@ -252,10 +263,23 @@ public class jMonticulos extends javax.swing.JFrame {
                                                 .addGap(198, 198, 198)
                                                 .addComponent(jNodo26)
                                                 .addGap(59, 59, 59)
-                                                .addComponent(jNodo27)
-                                                .addGap(70, 70, 70)
-                                                .addComponent(jNodo28)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)))
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(layout.createSequentialGroup()
+                                                        .addComponent(jNodo27)
+                                                        .addGap(70, 70, 70)
+                                                        .addComponent(jNodo28)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE))
+                                                    .addGroup(layout.createSequentialGroup()
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                            .addComponent(jLabelNomN)
+                                                            .addComponent(jLabelTel1)
+                                                            .addComponent(jLabelClaveN))
+                                                        .addGap(49, 49, 49)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                            .addComponent(jTelefonoR)
+                                                            .addComponent(jNombreR)
+                                                            .addComponent(jClaveR))
+                                                        .addGap(0, 0, Short.MAX_VALUE)))))
                                         .addGap(7, 7, 7)
                                         .addComponent(jNodo29)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
@@ -394,7 +418,19 @@ public class jMonticulos extends javax.swing.JFrame {
                     .addComponent(jNodo26, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jNodo25)
                     .addComponent(jNodo15))
-                .addContainerGap(138, Short.MAX_VALUE))
+                .addGap(33, 33, 33)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelNomN)
+                    .addComponent(jNombreR))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelTel1)
+                    .addComponent(jTelefonoR))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelClaveN)
+                    .addComponent(jClaveR))
+                .addContainerGap(81, Short.MAX_VALUE))
         );
 
         pack();
@@ -501,6 +537,20 @@ public class jMonticulos extends javax.swing.JFrame {
         this.ingresarLabels();
     }//GEN-LAST:event_formWindowOpened
 
+    private void jNodoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jNodoMouseClicked
+    private void Dibujar(){
+        
+    }
+    private void buscar(int nodo){
+        this.jLabelNomN.setText("Nombre: ");
+        this.jLabelClaveN.setText("Clave: ");
+        this.jLabelTel1.setText("Telefono: ");
+        this.jClaveR.setText(String.valueOf(this.mont.getClaveUsuario(nodo)));
+        this.jNombreR.setText(this.mont.getNombreUsuario(nodo));
+        this.jTelefonoR.setText(this.mont.getTelefonoUsuario(nodo));
+    }
     /**
      * @param args the command line arguments
      */
@@ -541,6 +591,7 @@ public class jMonticulos extends javax.swing.JFrame {
     private javax.swing.JTextField JTelefono1;
     private javax.swing.JTextField JTelefonoS;
     private javax.swing.JTextField jClave;
+    private javax.swing.JLabel jClaveR;
     private javax.swing.JTextField jClaveS;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -548,6 +599,9 @@ public class jMonticulos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabelClaveN;
+    private javax.swing.JLabel jLabelNomN;
+    private javax.swing.JLabel jLabelTel1;
     private javax.swing.JLabel jNodo;
     private javax.swing.JLabel jNodo1;
     private javax.swing.JLabel jNodo10;
@@ -580,6 +634,8 @@ public class jMonticulos extends javax.swing.JFrame {
     private javax.swing.JLabel jNodo8;
     private javax.swing.JLabel jNodo9;
     private javax.swing.JTextField jNombre;
+    private javax.swing.JLabel jNombreR;
     private javax.swing.JTextField jNombreS;
+    private javax.swing.JLabel jTelefonoR;
     // End of variables declaration//GEN-END:variables
 }
