@@ -413,151 +413,241 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="01"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo1MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo2">
       <Properties>
         <Property name="text" type="java.lang.String" value="02"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo2MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo3">
       <Properties>
         <Property name="text" type="java.lang.String" value="03"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo3MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo4">
       <Properties>
         <Property name="text" type="java.lang.String" value="04"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo4MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo5">
       <Properties>
         <Property name="text" type="java.lang.String" value="05"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo5MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo6">
       <Properties>
         <Property name="text" type="java.lang.String" value="06"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo6MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo7">
       <Properties>
         <Property name="text" type="java.lang.String" value="07"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo7MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo8">
       <Properties>
         <Property name="text" type="java.lang.String" value="08"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo8MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo9">
       <Properties>
         <Property name="text" type="java.lang.String" value="09"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo9MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo10">
       <Properties>
         <Property name="text" type="java.lang.String" value="10"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo10MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo11">
       <Properties>
         <Property name="text" type="java.lang.String" value="11"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo11MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo12">
       <Properties>
         <Property name="text" type="java.lang.String" value="12"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo12MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo13">
       <Properties>
         <Property name="text" type="java.lang.String" value="13"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo13MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo14">
       <Properties>
         <Property name="text" type="java.lang.String" value="14"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo14MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo15">
       <Properties>
         <Property name="text" type="java.lang.String" value="15"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo15MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo16">
       <Properties>
         <Property name="text" type="java.lang.String" value="16"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo16MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo17">
       <Properties>
         <Property name="text" type="java.lang.String" value="17"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo17MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo18">
       <Properties>
         <Property name="text" type="java.lang.String" value="18"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo18MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo19">
       <Properties>
         <Property name="text" type="java.lang.String" value="19"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo19MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo20">
       <Properties>
         <Property name="text" type="java.lang.String" value="20"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo20MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo21">
       <Properties>
         <Property name="text" type="java.lang.String" value="21"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo21MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo22">
       <Properties>
         <Property name="text" type="java.lang.String" value="22"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo22MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo23">
       <Properties>
         <Property name="text" type="java.lang.String" value="23"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo23MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo24">
       <Properties>
         <Property name="text" type="java.lang.String" value="24"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo24MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo25">
       <Properties>
         <Property name="text" type="java.lang.String" value="25"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo25MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo26">
       <Properties>
         <Property name="text" type="java.lang.String" value="26"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo26MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo27">
       <Properties>
         <Property name="text" type="java.lang.String" value="27"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo27MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo28">
       <Properties>
         <Property name="text" type="java.lang.String" value="28"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo28MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo29">
       <Properties>
         <Property name="text" type="java.lang.String" value="29"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo29MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jNodo30">
       <Properties>
         <Property name="text" type="java.lang.String" value="30"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jNodo30MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabelNomN">
     </Component>

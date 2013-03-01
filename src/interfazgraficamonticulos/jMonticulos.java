@@ -132,64 +132,214 @@ public class jMonticulos extends javax.swing.JFrame {
         });
 
         jNodo1.setText("01");
+        jNodo1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo1MouseClicked(evt);
+            }
+        });
 
         jNodo2.setText("02");
+        jNodo2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo2MouseClicked(evt);
+            }
+        });
 
         jNodo3.setText("03");
+        jNodo3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo3MouseClicked(evt);
+            }
+        });
 
         jNodo4.setText("04");
+        jNodo4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo4MouseClicked(evt);
+            }
+        });
 
         jNodo5.setText("05");
+        jNodo5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo5MouseClicked(evt);
+            }
+        });
 
         jNodo6.setText("06");
+        jNodo6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo6MouseClicked(evt);
+            }
+        });
 
         jNodo7.setText("07");
+        jNodo7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo7MouseClicked(evt);
+            }
+        });
 
         jNodo8.setText("08");
+        jNodo8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo8MouseClicked(evt);
+            }
+        });
 
         jNodo9.setText("09");
+        jNodo9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo9MouseClicked(evt);
+            }
+        });
 
         jNodo10.setText("10");
+        jNodo10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo10MouseClicked(evt);
+            }
+        });
 
         jNodo11.setText("11");
+        jNodo11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo11MouseClicked(evt);
+            }
+        });
 
         jNodo12.setText("12");
+        jNodo12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo12MouseClicked(evt);
+            }
+        });
 
         jNodo13.setText("13");
+        jNodo13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo13MouseClicked(evt);
+            }
+        });
 
         jNodo14.setText("14");
+        jNodo14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo14MouseClicked(evt);
+            }
+        });
 
         jNodo15.setText("15");
+        jNodo15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo15MouseClicked(evt);
+            }
+        });
 
         jNodo16.setText("16");
+        jNodo16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo16MouseClicked(evt);
+            }
+        });
 
         jNodo17.setText("17");
+        jNodo17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo17MouseClicked(evt);
+            }
+        });
 
         jNodo18.setText("18");
+        jNodo18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo18MouseClicked(evt);
+            }
+        });
 
         jNodo19.setText("19");
+        jNodo19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo19MouseClicked(evt);
+            }
+        });
 
         jNodo20.setText("20");
+        jNodo20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo20MouseClicked(evt);
+            }
+        });
 
         jNodo21.setText("21");
+        jNodo21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo21MouseClicked(evt);
+            }
+        });
 
         jNodo22.setText("22");
+        jNodo22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo22MouseClicked(evt);
+            }
+        });
 
         jNodo23.setText("23");
+        jNodo23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo23MouseClicked(evt);
+            }
+        });
 
         jNodo24.setText("24");
+        jNodo24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo24MouseClicked(evt);
+            }
+        });
 
         jNodo25.setText("25");
+        jNodo25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo25MouseClicked(evt);
+            }
+        });
 
         jNodo26.setText("26");
+        jNodo26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo26MouseClicked(evt);
+            }
+        });
 
         jNodo27.setText("27");
+        jNodo27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo27MouseClicked(evt);
+            }
+        });
 
         jNodo28.setText("28");
+        jNodo28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo28MouseClicked(evt);
+            }
+        });
 
         jNodo29.setText("29");
+        jNodo29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo29MouseClicked(evt);
+            }
+        });
 
         jNodo30.setText("30");
+        jNodo30.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNodo30MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -539,7 +689,159 @@ public class jMonticulos extends javax.swing.JFrame {
 
     private void jNodoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodoMouseClicked
         // TODO add your handling code here:
+        this.buscar(0);
     }//GEN-LAST:event_jNodoMouseClicked
+
+    private void jNodo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo1MouseClicked
+        // TODO add your handling code here:
+        this.buscar(1);
+    }//GEN-LAST:event_jNodo1MouseClicked
+
+    private void jNodo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo2MouseClicked
+        // TODO add your handling code here:
+        this.buscar(2);
+    }//GEN-LAST:event_jNodo2MouseClicked
+
+    private void jNodo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo3MouseClicked
+        // TODO add your handling code here:
+        this.buscar(3);
+    }//GEN-LAST:event_jNodo3MouseClicked
+
+    private void jNodo4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo4MouseClicked
+        // TODO add your handling code here:
+        this.buscar(4);
+    }//GEN-LAST:event_jNodo4MouseClicked
+
+    private void jNodo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo5MouseClicked
+        // TODO add your handling code here:
+        this.buscar(5);
+    }//GEN-LAST:event_jNodo5MouseClicked
+
+    private void jNodo6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo6MouseClicked
+        // TODO add your handling code here:
+        this.buscar(6);
+    }//GEN-LAST:event_jNodo6MouseClicked
+
+    private void jNodo7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo7MouseClicked
+        // TODO add your handling code here:
+        this.buscar(7);
+    }//GEN-LAST:event_jNodo7MouseClicked
+
+    private void jNodo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo8MouseClicked
+        // TODO add your handling code here:
+        this.buscar(8);
+    }//GEN-LAST:event_jNodo8MouseClicked
+
+    private void jNodo9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo9MouseClicked
+        // TODO add your handling code here:
+        this.buscar(9);
+    }//GEN-LAST:event_jNodo9MouseClicked
+
+    private void jNodo10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo10MouseClicked
+        // TODO add your handling code here:
+        this.buscar(10);
+    }//GEN-LAST:event_jNodo10MouseClicked
+
+    private void jNodo11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo11MouseClicked
+        // TODO add your handling code here:
+        this.buscar(11);
+    }//GEN-LAST:event_jNodo11MouseClicked
+
+    private void jNodo12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo12MouseClicked
+        // TODO add your handling code here:
+        this.buscar(12);
+    }//GEN-LAST:event_jNodo12MouseClicked
+
+    private void jNodo13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo13MouseClicked
+        // TODO add your handling code here:
+        this.buscar(13);
+    }//GEN-LAST:event_jNodo13MouseClicked
+
+    private void jNodo14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo14MouseClicked
+        // TODO add your handling code here:
+        this.buscar(14);
+    }//GEN-LAST:event_jNodo14MouseClicked
+
+    private void jNodo15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo15MouseClicked
+        // TODO add your handling code here:
+        this.buscar(15);
+    }//GEN-LAST:event_jNodo15MouseClicked
+
+    private void jNodo16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo16MouseClicked
+        // TODO add your handling code here:
+        this.buscar(16);
+    }//GEN-LAST:event_jNodo16MouseClicked
+
+    private void jNodo17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo17MouseClicked
+        // TODO add your handling code here:
+        this.buscar(17);
+    }//GEN-LAST:event_jNodo17MouseClicked
+
+    private void jNodo18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo18MouseClicked
+        // TODO add your handling code here:
+        this.buscar(18);
+    }//GEN-LAST:event_jNodo18MouseClicked
+
+    private void jNodo19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo19MouseClicked
+        // TODO add your handling code here:
+        this.buscar(19);
+    }//GEN-LAST:event_jNodo19MouseClicked
+
+    private void jNodo20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo20MouseClicked
+        // TODO add your handling code here:
+        this.buscar(20);
+    }//GEN-LAST:event_jNodo20MouseClicked
+
+    private void jNodo21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo21MouseClicked
+        // TODO add your handling code here:
+        this.buscar(21);
+    }//GEN-LAST:event_jNodo21MouseClicked
+
+    private void jNodo22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo22MouseClicked
+        // TODO add your handling code here:
+        this.buscar(22);
+    }//GEN-LAST:event_jNodo22MouseClicked
+
+    private void jNodo23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo23MouseClicked
+        // TODO add your handling code here:
+        this.buscar(23);
+    }//GEN-LAST:event_jNodo23MouseClicked
+
+    private void jNodo24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo24MouseClicked
+        // TODO add your handling code here:
+        this.buscar(24);
+    }//GEN-LAST:event_jNodo24MouseClicked
+
+    private void jNodo25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo25MouseClicked
+        // TODO add your handling code here:
+        this.buscar(25);
+    }//GEN-LAST:event_jNodo25MouseClicked
+
+    private void jNodo26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo26MouseClicked
+        // TODO add your handling code here:
+         this.buscar(26);
+    }//GEN-LAST:event_jNodo26MouseClicked
+
+    private void jNodo27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo27MouseClicked
+        // TODO add your handling code here:
+         this.buscar(27);
+    }//GEN-LAST:event_jNodo27MouseClicked
+
+    private void jNodo28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo28MouseClicked
+        // TODO add your handling code here:
+        this.buscar(28);
+    }//GEN-LAST:event_jNodo28MouseClicked
+
+    private void jNodo29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo29MouseClicked
+        // TODO add your handling code here:
+        this.buscar(29);
+    }//GEN-LAST:event_jNodo29MouseClicked
+
+    private void jNodo30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo30MouseClicked
+        // TODO add your handling code here:
+        this.buscar(30);
+    }//GEN-LAST:event_jNodo30MouseClicked
+    
     private void Dibujar(){
         
     }
