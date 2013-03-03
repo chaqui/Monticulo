@@ -11,6 +11,7 @@ package interfazgraficamonticulos;
 public class Monticulo {
     private Usuario[] usuario = new Usuario[31];
     private int size=0;
+    public boolean b=true;
 
     public int getSize() {
         return size;
@@ -30,16 +31,17 @@ public class Monticulo {
     }
     public void ingresar(Usuario usuario)
     {
+        System.out.println("Ingresar 1");
         System.out.println(String.valueOf(size));
-        boolean b = true;
         int cPadre;
         if (size<31) {
             for (int i = 0; i < size; i++) {
-            if (this.usuario[i].getClave()== usuario.getClave()) {
+                if (this.usuario[i].getClave()== usuario.getClave()) {
                 b =false;
             }
         }
         if (b) {
+            System.out.println("Ingresar");
             this.usuario[size]=usuario;
             cPadre= Padre(size);
             if (cPadre>=0) {
@@ -50,7 +52,7 @@ public class Monticulo {
         }
         }
         size++;
-
+        
         
     }
     public Usuario eliminar()

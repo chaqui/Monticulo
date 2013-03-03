@@ -6,7 +6,6 @@ package interfazgraficamonticulos;
 
 import java.awt.Graphics;
 import javax.swing.JOptionPane;
-import java.util.LinkedList;
 
 /**
  *
@@ -16,12 +15,15 @@ public class jMonticulos extends javax.swing.JFrame {
    private Monticulo mont = new  Monticulo();
    private int p1;
    private UltimaLinea ultima = new UltimaLinea();
+   private boolean bp1=true;
+   private boolean bp2=false;
 
     /**
      * Creates new form jMonticulos
      */
     public jMonticulos() {
         initComponents();
+        this.repaint();
     }
 
     /**
@@ -633,16 +635,17 @@ public class jMonticulos extends javax.swing.JFrame {
             String nombre = this.jNombre.getText();
             String telefono = this.JTelefono1.getText();
             Usuario us = new Usuario(clave,nombre,telefono);
-            
+                            this.bp2=true;
+              
             if (this.mont.getSize()<31) {
                 this.p1=this.mont.getSize();
                 this.mont.ingresar(us);
-                
                 for (int i = 0; i <= this.p1; i++) {
                     this.listaLabels[i].setText(String.valueOf(this.mont.getClaveUsuario(i)));
                 }
-                
+
                 this.listaLabels[this.p1].setVisible(true);
+                  //this.repaint();   
             }   
             else
             {
@@ -852,6 +855,56 @@ public class jMonticulos extends javax.swing.JFrame {
         this.jClaveR.setText(String.valueOf(this.mont.getClaveUsuario(nodo)));
         this.jNombreR.setText(this.mont.getNombreUsuario(nodo));
         this.jTelefonoR.setText(this.mont.getTelefonoUsuario(nodo));
+    }
+    @Override
+    public void paint(Graphics g){
+        int x,y,width,height,x1,y1,izq,der;
+        width=30;
+        height=30;
+        if (bp1) {
+            System.out.println("bp1");
+            x= this.listaLabels[0].getX()-5;
+            y=this.listaLabels[0].getY()+5;
+            g.drawArc(x, y, width, height, 0, 360);
+            this.bp1=false;
+        }
+        else{
+            if (bp2) {
+                //Dbujar arcos
+                System.out.println("bp2");
+                for (int i = 0; i < this.mont.getSize()+1; i++) {
+                    
+                    
+                    x= this.listaLabels[i].getX();
+                    y=this.listaLabels[i].getY();
+                    g.drawArc(x, y, width, height, 0, 360);
+                }
+                //Dibujar lineas
+                for (int i = 0; i <= this.mont.getSize(); i++) {
+                  x= this.listaLabels[i].getX()+3;
+                   y=this.listaLabels[i].getY()+5;
+                    izq= this.mont.hijoIzq(i);
+                    if (izq<= this.mont.getSize()) {
+                         x1=this.listaLabels[izq].getX()+30;
+                         y1=this.listaLabels[izq].getY()+5;
+                         System.out.println("izquierdo");
+                         g.drawLine(x, y,x1,y1);
+                    }
+                    der= this.mont.hijoIzq(i);
+                    if (der<= this.mont.getSize()) {
+                         x1=this.listaLabels[der].getX()+30;
+                         y1=this.listaLabels[der].getY()+5;
+                          System.out.println("Derecho");
+                         g.drawLine(x, y,x1,y1);
+                    }
+                   
+                   
+                }          
+            }
+            else   {
+                
+            }
+        }
     }
     /**
      * @param args the command line arguments
