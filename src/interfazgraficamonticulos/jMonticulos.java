@@ -846,11 +846,9 @@ public class jMonticulos extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.buscar(30);
     }//GEN-LAST:event_jNodo30MouseClicked
-    
-    private void Dibujar(){
-        
-    }
-    private void buscar(int nodo){
+
+    private void buscar(int nodo)
+    {
         this.jLabelNomN.setText("Nombre: ");
         this.jLabelClaveN.setText("Clave: ");
         this.jLabelTel1.setText("Telefono: ");
@@ -859,7 +857,8 @@ public class jMonticulos extends javax.swing.JFrame {
         this.jTelefonoR.setText(this.mont.getTelefonoUsuario(nodo));
     }
     @Override
-    public void paint(Graphics g){
+    public void paint(Graphics g)
+    {
         int x,y,q,width,height,x1,y1,padre;
         width=30;
         height=30;
