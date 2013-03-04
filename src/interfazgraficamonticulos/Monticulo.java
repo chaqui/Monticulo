@@ -47,9 +47,10 @@ public class Monticulo {
             if (cPadre>=0) {
                 if (this.usuario[cPadre].getClave()>this.usuario[size].getClave()) {
                     this.upHeap(cPadre, size);
-                    size++;
+                    
                 }
             }
+            size++;
         }
         }
         

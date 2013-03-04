@@ -635,8 +635,7 @@ public class jMonticulos extends javax.swing.JFrame {
             String nombre = this.jNombre.getText();
             String telefono = this.JTelefono1.getText();
             Usuario us = new Usuario(clave,nombre,telefono);
-                            this.bp2=true;
-              
+            this.bp2=true;
             if (this.mont.getSize()<31) {
                 this.p1=this.mont.getSize();
                 this.mont.ingresar(us);
@@ -645,7 +644,10 @@ public class jMonticulos extends javax.swing.JFrame {
                 }
 
                 this.listaLabels[this.p1].setVisible(true);
-                  //this.repaint();   
+                  this.repaint();   
+                 for (int i = 0; i <= this.p1; i++) {
+                    this.listaLabels[i].repaint();
+                }
             }   
             else
             {
