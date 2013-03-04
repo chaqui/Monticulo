@@ -16,7 +16,7 @@ public class jMonticulos extends javax.swing.JFrame {
    private int p1;
    private UltimaLinea ultima = new UltimaLinea();
    private boolean bp1=true;
-   private boolean bp2=false;
+   private boolean bp2=false, bl=true,bp=true;
 
     /**
      * Creates new form jMonticulos
@@ -654,7 +654,7 @@ public class jMonticulos extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Numero de nodos completo", "Nodos Completos", JOptionPane.INFORMATION_MESSAGE);
             }
             
-        }
+        }   
         
         else{
             
@@ -860,7 +860,7 @@ public class jMonticulos extends javax.swing.JFrame {
     }
     @Override
     public void paint(Graphics g){
-        int x,y,width,height,x1,y1,izq,der;
+        int x,y,q,width,height,x1,y1,padre;
         width=30;
         height=30;
         if (bp1) {
@@ -880,34 +880,24 @@ public class jMonticulos extends javax.swing.JFrame {
                     x= this.listaLabels[i].getX();
                     y=this.listaLabels[i].getY();
                     g.drawArc(x, y, width, height, 0, 360);
-                }
+                
                 //Dibujar lineas
-                for (int i = 0; i <= this.mont.getSize(); i++) {
-                  x= this.listaLabels[i].getX()+3;
-                   y=this.listaLabels[i].getY()+5;
-                    izq= this.mont.hijoIzq(i);
-                    if (izq<= this.mont.getSize()) {
-                         x1=this.listaLabels[izq].getX()+30;
-                         y1=this.listaLabels[izq].getY()+5;
-                         System.out.println("izquierdo");
-                         g.drawLine(x, y,x1,y1);
+                    padre = this.mont.Padre(i);
+                    if (padre>=0) {
+                        x=this.listaLabels[padre].getX()+15;
+                        y=this.listaLabels[padre].getY()+30;
                     }
-                    der= this.mont.hijoIzq(i);
-                    if (der<= this.mont.getSize()) {
-                         x1=this.listaLabels[der].getX()+30;
-                         y1=this.listaLabels[der].getY()+5;
-                          System.out.println("Derecho");
-                         g.drawLine(x, y,x1,y1);
-                    }
-                   
+                    x1=this.listaLabels[i].getX()+15;
+                    y1=this.listaLabels[i].getY();
+                    g.drawLine(x, y, x1, y1);
+                }
+                }
                    
                 }          
             }
-            else   {
-                
-            }
-        }
-    }
+         
+        
+    
     /**
      * @param args the command line arguments
      */
