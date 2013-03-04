@@ -875,10 +875,12 @@ public class jMonticulos extends javax.swing.JFrame {
                 //Dbujar arcos
                 System.out.println("bp2");
                 for (int i = 0; i < this.mont.getSize()+1; i++) {
-                    
-                    
+                    x= this.listaLabels[i].getX();
+                    y=this.listaLabels[i].getY()+14;
+                    g.drawString(String.valueOf(this.listaLabels[i].getText()), x, y);
                     x= this.listaLabels[i].getX();
                     y=this.listaLabels[i].getY();
+
                     g.drawArc(x, y, width, height, 0, 360);
                 
                 //Dibujar lineas
@@ -891,12 +893,10 @@ public class jMonticulos extends javax.swing.JFrame {
                     y1=this.listaLabels[i].getY();
                     g.drawLine(x, y, x1, y1);
                 }
-                }
-                   
-                }          
             }
-         
-        
+        }          
+    }
+           
     
     /**
      * @param args the command line arguments
