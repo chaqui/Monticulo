@@ -666,7 +666,7 @@ public class jMonticulos extends javax.swing.JFrame {
 
     private void BtEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtEliminarActionPerformed
         // TODO add your handling code here:
-
+try{
             int p3=this.mont.getSize();
             Usuario us;
             us = this.mont.eliminar();
@@ -683,8 +683,12 @@ public class jMonticulos extends javax.swing.JFrame {
             this.listaLabels[this.mont.getSize()].setText(" ");
             this.listaLabels[this.mont.getSize()].setVisible(false);
             System.out.println("p3: "+this.listaLabels[p3]);
+            this.repaint();
            
-
+}
+catch(NullPointerException e){
+               JOptionPane.showMessageDialog(null, "Monticulo Limpio", "Error", JOptionPane.INFORMATION_MESSAGE);
+}
     }//GEN-LAST:event_BtEliminarActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
@@ -859,13 +863,14 @@ public class jMonticulos extends javax.swing.JFrame {
     @Override
     public void paint(Graphics g)
     {
-        int x,y,q,width,height,x1,y1,padre;
+        super.paint(g);
+        int x,y,q,width,height,x1,y1,padre,b;
         width=30;
         height=30;
         if (bp1) {
             System.out.println("bp1");
-            x= this.listaLabels[0].getX()-5;
-            y=this.listaLabels[0].getY()+5;
+            x= this.listaLabels[0].getX()-7;
+            y=this.listaLabels[0].getY()+15;
             g.drawArc(x, y, width, height, 0, 360);
             this.bp1=false;
         }
@@ -874,23 +879,30 @@ public class jMonticulos extends javax.swing.JFrame {
                 //Dbujar arcos
                 System.out.println("bp2");
                 for (int i = 0; i < this.mont.getSize()+1; i++) {
-                    x= this.listaLabels[i].getX();
-                    y=this.listaLabels[i].getY()+14;
-                    g.drawString(String.valueOf(this.listaLabels[i].getText()), x, y);
-                    x= this.listaLabels[i].getX();
-                    y=this.listaLabels[i].getY();
+                    x= this.listaLabels[i].getX()-7;
+                    y=this.listaLabels[i].getY()+15;
 
                     g.drawArc(x, y, width, height, 0, 360);
                 
                 //Dibujar lineas
                     padre = this.mont.Padre(i);
                     if (padre>=0) {
-                        x=this.listaLabels[padre].getX()+15;
-                        y=this.listaLabels[padre].getY()+30;
+                        x=this.listaLabels[padre].getX()+10;
+                        y=this.listaLabels[padre].getY()+45;
                     }
-                    x1=this.listaLabels[i].getX()+15;
-                    y1=this.listaLabels[i].getY();
-                    g.drawLine(x, y, x1, y1);
+                        b=i%2;
+                        System.out.println("b: "+String.valueOf(b));
+                    if (b==0) {
+                        x1=this.listaLabels[i].getX()-8;
+                        y1=this.listaLabels[i].getY()+30;
+                        g.drawLine(x, y, x1, y1);
+                    }
+                    else{
+                         x1=this.listaLabels[i].getX()+20;
+                        y1=this.listaLabels[i].getY()+30;
+                        g.drawLine(x, y, x1, y1);
+                    }
+
                 }
             }
         }          
