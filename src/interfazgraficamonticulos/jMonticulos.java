@@ -128,15 +128,18 @@ public class jMonticulos extends javax.swing.JFrame {
 
         jNodo.setText("00");
         jNodo.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jNodoMouseClicked(evt);
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jNodoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jNodoMouseExited(evt);
             }
         });
 
         jNodo1.setText("01");
         jNodo1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jNodo1MouseClicked(evt);
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jNodo1MouseEntered(evt);
             }
         });
 
@@ -145,12 +148,18 @@ public class jMonticulos extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jNodo2MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jNodo2MouseEntered(evt);
+            }
         });
 
         jNodo3.setText("03");
         jNodo3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jNodo3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jNodo3MouseEntered(evt);
             }
         });
 
@@ -159,12 +168,18 @@ public class jMonticulos extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jNodo4MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jNodo4MouseEntered(evt);
+            }
         });
 
         jNodo5.setText("05");
         jNodo5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jNodo5MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jNodo5MouseEntered(evt);
             }
         });
 
@@ -632,9 +647,11 @@ public class jMonticulos extends javax.swing.JFrame {
         if (this.jClave.getText()!="" && this.JTelefono1.getText()!="" && this.jNombre.getText()!="") {
             System.out.println(this.jClave.getText());
             int clave = Integer.parseInt(this.jClave.getText());
+            try{
             String nombre = this.jNombre.getText();
             String telefono = this.JTelefono1.getText();
             Usuario us = new Usuario(clave,nombre,telefono);
+
             this.bp2=true;
             if (this.mont.getSize()<31) {
                 this.p1=this.mont.getSize();
@@ -654,13 +671,19 @@ public class jMonticulos extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Numero de nodos completo", "Nodos Completos", JOptionPane.INFORMATION_MESSAGE);
             }
             
-        }   
-        
+        }
+              catch(Exception e){
+                           JOptionPane.showMessageDialog(null, "Un dato mal ingresado ", "Error", JOptionPane.INFORMATION_MESSAGE);
+            }
+        }
         else{
             
              JOptionPane.showMessageDialog(null, "Error", "Un campo no tiene datos", JOptionPane.INFORMATION_MESSAGE);
 
         }
+                    
+          
+            
         
     }//GEN-LAST:event_BtIngresarActionPerformed
 
@@ -695,16 +718,6 @@ catch(NullPointerException e){
         // TODO add your handling code here:
         this.ingresarLabels();
     }//GEN-LAST:event_formWindowOpened
-
-    private void jNodoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodoMouseClicked
-        // TODO add your handling code here:
-        this.buscar(0);
-    }//GEN-LAST:event_jNodoMouseClicked
-
-    private void jNodo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo1MouseClicked
-        // TODO add your handling code here:
-        this.buscar(1);
-    }//GEN-LAST:event_jNodo1MouseClicked
 
     private void jNodo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo2MouseClicked
         // TODO add your handling code here:
@@ -851,6 +864,48 @@ catch(NullPointerException e){
         this.buscar(30);
     }//GEN-LAST:event_jNodo30MouseClicked
 
+    private void jNodoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodoMouseEntered
+        // TODO add your handling code here:
+           this.buscar(0);
+    }//GEN-LAST:event_jNodoMouseEntered
+
+    private void jNodo1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo1MouseEntered
+            // TODO add your handling code here:
+           this.buscar(1);
+    }//GEN-LAST:event_jNodo1MouseEntered
+
+    private void jNodo2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo2MouseEntered
+        // TODO add your handling code here:
+           this.buscar(2);
+    }//GEN-LAST:event_jNodo2MouseEntered
+
+    private void jNodo3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo3MouseEntered
+        // TODO add your handling code here:
+           this.buscar(3);
+    }//GEN-LAST:event_jNodo3MouseEntered
+
+    private void jNodo4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo4MouseEntered
+        // TODO add your handling code here:
+           this.buscar(4);
+    }//GEN-LAST:event_jNodo4MouseEntered
+
+    private void jNodo5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodo5MouseEntered
+        // TODO add your handling code here:
+           this.buscar(5);
+    }//GEN-LAST:event_jNodo5MouseEntered
+
+    private void jNodoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNodoMouseExited
+        // TODO add your handling code here:
+        this.limpiar();
+    }//GEN-LAST:event_jNodoMouseExited
+    private void limpiar(){
+          this.jLabelNomN.setText(" ");
+        this.jLabelClaveN.setText(" ");
+        this.jLabelTel1.setText(" ");
+         this.jClaveR.setText(" ");
+        this.jNombreR.setText(" ");
+        this.jTelefonoR.setText(" ");
+    }
     private void buscar(int nodo)
     {
         this.jLabelNomN.setText("Nombre: ");
