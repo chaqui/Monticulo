@@ -76,11 +76,12 @@ public class Monticulo {
                  if (usuario[p].getClave()>usuario[cIzq].getClave()) {
                     if (usuario[p].getClave()>usuario[cDer].getClave()) {
                         if (usuario[cIzq].getClave()>usuario[cDer].getClave()) {
-                            this.downHeap(p, cIzq);
+                            this.downHeap(p, cDer);
                         }
                         else
                         {
-                             this.downHeap(p, cDer);
+                             this.downHeap(p, cIzq);
+                            
                         }
                 }
                     else
